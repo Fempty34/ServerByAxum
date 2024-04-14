@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: server_by_axum:latest
+    container_name: server
+    env_file:
+      - .env
